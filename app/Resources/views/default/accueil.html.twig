@@ -74,19 +74,7 @@
             <div class="col-12 col-lg-6 p-2">
                 <div class="border border-info rounded bg-grey rounded-bottom">
                     <h2 class="h3 text-center bg-info rounded-top text-light p-2">Commentaires</h2>
-                    <?php $comments = $bdd->query('SELECT * FROM commentaire ORDER BY comm_date DESC LIMIT 10');
-                    while ($comment = $comments->fetch()) { ?>
-                    <hr>
-                    <div class="px-3">
-                        <p><strong><?= $comment['comm_name'];?></strong> <small class="float-right"><?= $comment['comm_date'];?></small></p>
-                        <p><?= $comment['comm_message'];?><?php
-                        if ($_SESSION['class'] == 4 || $_SESSION['user'] == $comment['comm_name']) { ?>
-                            <button class="btn btn-danger float-right delcomm" form="delComm" type="submit" name="del_comm" value="<?= $comment['idCommentaire'] ?>">X</button></p>
-                        <?php } ?>
-                    </div><?php
-                }
-                ?>
-                    <form id="delComm" method="post"></form>
+
                 </div>
             </div>
             <div class="col-12 col-lg-6 p-2">
