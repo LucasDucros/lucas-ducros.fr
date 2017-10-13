@@ -1,0 +1,3 @@
+games_homepage:
+    path:     /jeux
+    defaults: { _controller: GamesBundle:Default:index }

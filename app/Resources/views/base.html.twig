@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Global Site Tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-107283856-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments)};
+            gtag('js', new Date());
+            gtag('config', 'UA-107283856-1');
+        </script>
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Actuellement en formation développeur Web à l'IMIE de Saint-Nazaire, pour une durée de 4 mois qui prendra fin le 9 octobre 2017, je suis donc en recherche de contrat en alternance pour débuter en octobre.">
+        <meta name="keywords" content="Lucas Ducros Développeur Web Junior FullStack Saint-Nazaire 44">
+        <meta name="author" content="Lucas Ducros">
+
+        <title>{% block title %}Lucas Ducros - Web Développeur Fullstack Saint-Nazaire 44{% endblock %}</title>
+        {% block stylesheets %}{% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between fixed-top" id="homeNav">
+            <div class="container">
+                <a class="navbar-brand" href="/">lucas-ducros.fr</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="/accueil">Accueil</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/jeux" id="navbarDropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jeux</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenu1">
+                                <a class="dropdown-item" href="/jeux/carre-magique">Carré Magique</a>
+                                <a class="dropdown-item" href="/jeux/demineur">Démineur</a>
+                                <a class="dropdown-item" href="/jeux/sudoku">Sudoku</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/benchmark" id="navbarDropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Benchmark</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenu2">
+                                <a class="dropdown-item" href="/benchmark/CPU">CPU</a>
+                                <a class="dropdown-item" href="/benchmark/CPU-benchmark">Benchmark CPU</a>
+                            </div>
+                        </li>
+                        <!--
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/blog" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Blog</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/blog">Blog</a>
+                                <a class="dropdown-item" href="/blog/categories">Catégories</a>
+                                <a class="dropdown-item" href="/blog/authors">Auteurs</a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="/forum">Forum</a></li>-->
+                        <?php include 'include/connexion.php'; ?>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        {% block body %}{% endblock %}
+
+        <footer class="fixed-bottom bg-dark border border-left-0 border-right-0 border-bottom-0 border-secondary">
+            <small class="float-left text-light px-1">copyright © 2017 Lucas Ducros</small>
+            <small class="float-right text-light px-1">use symfony 3.3</small>
+        </footer>
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="/vendor/jquery/jquery.min.js"></script>
+        <script src="/vendor/popper/popper.min.js"></script>
+        <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+        <!-- Plugin JavaScript -->
+        <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+        <!-- Contact Form JavaScript -->
+        <script src="/js/acount.js"></script>
+
+        {% block javascripts %}<script src="/js/freelancer.min.js"></script>{% endblock %}
+    </body>
+
+</html>

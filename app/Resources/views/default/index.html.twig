@@ -1,0 +1,173 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top border border-secondary border-left-0 border-right-0" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">Accueil</a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#competences">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projets">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#formation">Formation</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="page-top"></div>
+    <header class="bg-info text-light pt-1">
+        <div id="header-container" class="container">
+            <img id="header-profil" class="rounded-circle" src="img/Photo-CV.png" alt="Photo de profil - Lucas Ducros">
+            <div id="header-title">
+                <h1 id="header-name">Lucas DUCROS</h1>
+                <h2 id="header-poste">Développeur WEB FullStack<br>Saint-Nazaire 44</h2>
+            </div>
+            <p class="pb-5 mb-0">Actuellement en formation développeur Web à l'IMIE de Saint-Nazaire, pour une durée de 4 mois qui prendra fin le 9 octobre 2017, je suis donc en recherche de contrat en alternance pour débuter en octobre.</p>
+        </div>
+    </header>
+    <div class="parallax parallax-0">
+    </div>
+    <section id="competences" class="bg-light">
+        <div class="container p-5">
+            <h2>Competences</h2>
+            <div class="row">
+                <div class="col-12 col-sm-6 p-3">
+                    <h3 class="h4">HTML</h3>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 80%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 p-3">
+                    <h3 class="h4">CSS</h3>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 55%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 p-3">
+                    <h3 class="h4">Bootstrap</h3>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 70%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 p-3">
+                    <h3 class="h4">JavaScript</h3>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 80%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 p-3">
+                    <h3 class="h4">PHP</h3>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 60%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 p-3">
+                    <h3 class="h4">MySQL</h3>
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" style="width: 70%" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="parallax parallax-1">
+    </div>
+    <section id="projets" class="bg-info text-light">
+        <div class="container py-5">
+            <h2>Projets</h2>
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    <h3 class="h5 py-2">Team Rockets</h3>
+                    <p>Développement en total autonomie d’un site WEB pour une association de loisirs sportifs (Caisse à Savon) en cours de création : HTML, CSS et JAVASCRIPT</p>
+                    <a class="text-light" href="http://cas-team-rockets.hebergratuit.net">cas-team-rockets.hebergratuit.net</a>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <h3 class="h5 py-2"><a class="text-light" href="http://lucas-ducros.fr">lucas-ducros.fr</a></h3>
+                    <p>Site Web personnel destiné à partager mes passions tout en exerçant mes Compétences en programmation : HTML, CSS, Bootstrap, JavaScript, PHP, MySQL, Symfony </p>
+                    <a class="text-light" href="http://lucas-ducros.fr">lucas-ducros.fr</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="parallax parallax-2">
+    </div>
+    <section id="formation" class="bg-light">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-12 col-sm-6 my-3">
+                    <h2>Formation</h2>
+                    <p>
+                        Juin / oct. 2017<br>
+                        <b>Développeur WEB </b>- IMIE Saint-Nazaire<br>
+                        Formation dans le cadre d’une préparation opérationnelle à l’emploi (POE) - dispositif Pole Emploi / Région<br>
+                    </p>
+                    <p>
+                        2009-2013<br>
+                        <b>BAC PRO ELEEC </b>- Monistrol-sur-Loire<br>
+                        (Électrotechniques, Energies et Equipements Communicants)<br>
+                    </p>
+                </div>
+                <div class="col-12 col-sm-6 my-3">
+                    <h2>Experiences</h2>
+                    <p>
+                        Oct. / Déc. 2016<br>
+                        <b>Electrotechnicien</b> - A.T.S. - Trignac<br>
+                        <i>Rénovation de logement dans un délai imparti</i><br>
+                    </p>
+                    <p>
+                        2015-2016<br>
+                        <b>Electrotechnicien</b> - Atecc service - Firminy <br>
+                        <i>Electricité dans le domaine de la climatisation</i><br>
+                    </p>
+                    <p>
+                        2014-2015<br>
+                        <b>Electrotechnicien</b> - Chomienne - Saint-Étienne<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="parallax parallax-3">
+    </div>
+    <section id="contact" class="bg-dark text-light">
+        <div class="container py-5">
+            <h2 class="p-0">Contact</h2>
+            <div class="row">
+                <div class="col-12 col-md-5">
+                    <h3 class="h5 my-3">Lucas DUCROS</h3>
+                    <p class="my-2">Mobilité : Permis B, Véhiculé</p>
+                    <p class="my-2">Ville : Saint-Nazaire 44600</p>
+                    <p class="my-2">Tel : 06 52 65 66 23</p>
+                    <p class="my-2">Email : lucas.ducros@outlook.fr</p>
+                    <p class="my-2"><a class="btn btn-info" href="docs/CV-Lucas-Ducros.pdf" download="CV_Lucas_Ducros.pdf">CV format PDF</a></p>
+                </div>
+                <div class="col-12 col-md-7 pt-0">
+                    <form method="post">
+                        <div class="bg-light border border-secondary rounded form-group row m-0">
+                            <label for="name_mail" class="pt-1 text-secondary col-3 col-lg-2">Nom</label>
+                            <input id="name_mail" class="form-control border-0 bg-light col-9 col-lg-10" type="text" name="name" value="{{app.session.get('userName')}}">
+                        </div>
+                        <div class="bg-light border border-secondary rounded form-group row m-0">
+                            <label for="email_mail" class="pt-1 text-secondary col-3 col-lg-2">Email</label>
+                            <input id="email_mail" class="form-control border-0 bg-light col-9 col-lg-10" type="email" name="email" value="{{app.session.get('userMail')}}">
+                        </div>
+                        <div class="bg-light border border-secondary rounded form-group row m-0">
+                            <label for="sub_mail" class="pt-1 text-secondary col-3 col-lg-2">Sujet</label>
+                            <input id="sub_mail" class="form-control border-0 bg-light col-9 col-lg-10" type="text" name="subject">
+                        </div>
+                        <div class="bg-light border border-secondary rounded form-group row m-0">
+                            <label for="mes_mail" class="pt-1 text-secondary col-3 col-lg-2">Message</label>
+                            <textarea id="mes_mail" class="form-control border-0 bg-light col-9 col-lg-10" name="message"></textarea>
+                        </div>
+                        <button class="btn btn-info" type="submit" name="send_mail">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+            <!--<a href="http://twitter.fr/lucas-ducros/"></a>-->
+        </div>
+    </section>
+{% endblock %}
+
